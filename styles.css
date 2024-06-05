@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Samsung Font';
+    src: url('path/to/samsung-font.woff2') format('woff2'),
+         url('path/to/samsung-font.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Image Font';
+    src: url('path/to/image-font.woff2') format('woff2'),
+         url('path/to/image-font.woff') format('woff');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.image-gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.image-container {
+    text-align: center;
+    margin: 0 10px 20px; 
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.image-container img {
+    max-width: 100%; 
+}
+
+.image-name {
+    margin-top: 10px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'Samsung Font', sans-serif;
+}
+
+.grid-item p {
+    font-family: 'Image Font', sans-serif;
+}
